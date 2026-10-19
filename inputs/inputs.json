@@ -1,0 +1,46 @@
+{
+ "source": "online-retail-analysis, cleaned sales table (UCI Online Retail II, CC BY 4.0)",
+ "segment_rule": "RFM scores CEIL(5 * CUME_DIST()) on 12 months before the snapshot; at_risk = recency score <= 2 and frequency score >= 3",
+ "history": [
+  {
+   "snapshot": "2010-12-01",
+   "at_risk_customers": 815,
+   "returned_90d": 222,
+   "return_rate": 0.2724,
+   "revenue_per_returner_90d_gbp": 562.42,
+   "median_prior_12m_gbp": 759.98
+  },
+  {
+   "snapshot": "2011-03-01",
+   "at_risk_customers": 725,
+   "returned_90d": 211,
+   "return_rate": 0.291,
+   "revenue_per_returner_90d_gbp": 617.68,
+   "median_prior_12m_gbp": 750.24
+  },
+  {
+   "snapshot": "2011-06-01",
+   "at_risk_customers": 700,
+   "returned_90d": 154,
+   "return_rate": 0.22,
+   "revenue_per_returner_90d_gbp": 510.19,
+   "median_prior_12m_gbp": 676.56
+  },
+  {
+   "snapshot": "2011-09-01",
+   "at_risk_customers": 659,
+   "returned_90d": 273,
+   "return_rate": 0.4143,
+   "revenue_per_returner_90d_gbp": 609.51,
+   "median_prior_12m_gbp": 673.6
+  }
+ ],
+ "current": {
+  "snapshot": "2011-12-01",
+  "at_risk_customers": 736,
+  "prior_12m_revenue_gbp": 811729.33,
+  "median_recency_days": 142.0,
+  "top20_customers": 147,
+  "top20_prior_12m_revenue_gbp": 436315.87
+ }
+}
